@@ -771,7 +771,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   font-weight: bold;
-  padding-bottom: 30px;
+  padding-bottom: 12px;
 }
 
 .form-input {
@@ -780,8 +780,21 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-bottom: ;
+  padding-left: 42px;
+  outline: none;
+}
+
+.input-wrap {
+  position: relative;
   margin-bottom: 10px;
-  padding-left: 16px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .lable-text {
@@ -792,6 +805,10 @@ body {
   padding-bottom: 4px;
 }
 
-/* .form-input:focus {
-  border: 1px solid #2196f3;
-} */
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:focus + .input-icon {
+  fill: var(--accent-color);
+}
