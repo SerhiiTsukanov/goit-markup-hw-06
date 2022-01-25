@@ -49,7 +49,7 @@
         <section class="under-header">
             <div class="container">
                 <h1 class="under-header-h1">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="under-header-btn transition-background" data-modal-open>Заказать услугу</button> 
+                <button type="button" class="button under-header-btn transition-background" data-modal-open>Заказать услугу</button> 
             </div>
         </section>
 
@@ -385,7 +385,7 @@
                     <input class="email-input" type="email" name="email" id="" placeholder="E-mail">
                 </div>
                 <div class="footer-subscription-btn">
-                    <button type="button" class="subscription-btn">Подписаться
+                    <button type="button" class="button subscription-btn">Подписаться
                         <svg class="subscription-icon">
                             <use href="./images/icons.svg#icon-iconsend"></use>
                         </svg>
@@ -434,15 +434,18 @@
                     placeholder="Введите текст"
                     ></textarea>
                 <div class="form-field">
-                    <input class="checkbox-input" type="checkbox" name="policy" id="policy">
-                    <label class="checkbox-text" for="policy">Соглашаюсь с рассылкой и принимаю
-                        <a href="">Условия договора</a>
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="policy" id="policy">
+                    <label class="checkbox-text" for="policy">
+                        <span>
+                            <svg class="icon-check" width="15px" height="15px">
+                                <use href="images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>Соглашаюсь с рассылкой и принимаю
+                        <a class="checkbox-text-color" href="">Условия договора</a>
                     </label>
-                    <svg class="icon-check" width="15px" height="15px">
-                        <use href="images/icons.svg#icon-check"></use>
-                    </svg>
+                    
                 </div>
-                <button class="modal-btn" type="submit">Отправить</button>
+                <button class="modal-btn button" type="submit">Отправить</button>
 
             </form>
         </div>
